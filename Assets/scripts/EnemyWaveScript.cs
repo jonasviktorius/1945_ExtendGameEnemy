@@ -32,7 +32,7 @@ public class EnemyWaveScript : MonoBehaviour
                         for (int i = 0; i < A.spawnCount; i++)
                         {
                             Debug.Log("Wave");
-                            Vector3 spawnPosition = new Vector3(10,0,0);
+                            Vector3 spawnPosition = new Vector3(10, Random.Range(-5, 5), 0);
                             Quaternion spawnRotation = Quaternion.identity;
                             Instantiate(A.prefab, spawnPosition, spawnRotation);
                         }
